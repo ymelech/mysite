@@ -1,0 +1,22 @@
+{% extends "maintenance/base.html" %}
+
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'maitenance/style.css' %}">
+
+{% block title %}Device list{% endblock %}
+
+{% block body %}
+    {% if device %}
+        <ul>
+        {% for device in object_list %}
+            <li>
+                <a href="{% url 'maintenance:device_details' device.id %}">{{ device.toString }}</a>
+                <a href="{% url 'maintenance:maintenance_by_device' device.id %}">Maintenance</a>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No devices are available.</p>
+    {% endif %}
+{% endblock %}

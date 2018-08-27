@@ -1,0 +1,65 @@
+(function () {
+        var s = document.createElement('script');
+        var p = "var i = document.createElement('img');\
+    i.setAttribute('alt', '');\
+    i.setAttribute('height', '1');\
+    i.setAttribute('width', '1');\
+    i.setAttribute('style', 'display: none;');\
+    i.setAttribute('src', 'https://tapestry.tapad.com/tapestry/1?ta_partner_did=fS2dWWptFjZ9nJz4gOS2y_sZyDAq0OsbFcEWGOlGj3O26b7FDl5ncg3kINL_RoVJ&ta_partner_id=996&ta_redirect=https://pixel.sojern.com/tapidSync?exchangeProfileId=${IDS:key}');\
+    document.body.appendChild(i);\
+";
+
+        s.type = 'text/javascript';
+        s.async = true;
+        if (s.textContent) {
+            s.textContent = p;
+        } else {
+            s.text = p;
+        }
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+    })();
+    (function () {
+        var s = document.createElement('script');
+        var p = "var i = document.createElement('img');\
+    i.setAttribute('alt', '');\
+    i.setAttribute('height', '1');\
+    i.setAttribute('width', '1');\
+    i.setAttribute('style', 'display: none;');\
+    i.setAttribute('src', 'https://cm.g.doubleclick.net/pixel?google_nid=sojern__adx_open_bidder_seat&google_hm=LV8MOJCvh0m1-WkfXBIASw&google_cm&google_sc&sjrn_id=AXuXl7hrcz6dFZymPR1gsejAGrWnikJVFaiCKtvi8zqDsKBTBt4Nzh-dUQEcwaYw');\
+    document.body.appendChild(i);\
+";
+
+        s.type = 'text/javascript';
+        s.async = true;
+        if (s.textContent) {
+            s.textContent = p;
+        } else {
+            s.text = p;
+        }
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+    })();
+    
+    (function () {
+        var s = document.createElement('script');
+        var p = "var i = document.createElement('img');\
+    i.setAttribute('alt', '');\
+    i.setAttribute('height', '1');\
+    i.setAttribute('width', '1');\
+    i.setAttribute('style', 'display: none;');\
+    i.setAttribute('src', 'https://ib.adnxs.com/getuid?https://pixel.sojern.com/idSync/apn?sjrn_cid=AXuXl7hrcz6dFZymPR1gsejAGrWnikJVFaiCKtvi8zqDsKBTBt4Nzh-dUQEcwaYw&adnxs_uid=$UID');\
+    document.body.appendChild(i);\
+";
+
+        s.type = 'text/javascript';
+        s.async = true;
+        if (s.textContent) {
+            s.textContent = p;
+        } else {
+            s.text = p;
+        }
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+    })();
+    

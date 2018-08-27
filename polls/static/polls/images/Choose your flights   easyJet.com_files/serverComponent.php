@@ -1,0 +1,2 @@
+
+Bootstrapper._serverTime = '2018-08-22 18:27:56'; Bootstrapper._clientIP = '0.0.0.0'; Bootstrapper.insertPageFiles(['https://nexus.ensighten.com/easyjet/en/code/d5ad9d2caf7cc742ad888dbaf2d0149c.js?conditionId0=435263','https://nexus.ensighten.com/easyjet/en/code/44d9e199ad969f354fa12686b0fafaff.js?conditionId0=470371']);Bootstrapper.setPageSpecificDataDefinitionIds([55040,50390,54874,54427,54875,25788]);

@@ -1,0 +1,116 @@
+/* reset */
+/*
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*/
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color:red;
+}
+
+a:active{
+    color: rgb(41, 150, 41);
+}
+
+a:visited{
+    color: blue;
+}
+
+body{
+    background-color: 0xfff;
+    color: rgb(44, 25, 110);
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.box-1{
+    background-color: dimgray;
+    color: black;
+
+    border: 5px black solid;
+    padding: 10px;
+    margin: 20px;
+}
+
+.box-1 h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.box-2{
+    background-color: dimgray;
+    color: black;
+
+    border: 5px black solid;
+    padding: 10px;
+    margin: 20px;
+}
+
+.messagebox{
+    background-color: #333333;
+    color: #ffffff;
+
+    padding: 10px;
+    margin: 30px;
+}
+
+.categories{
+    border: 1px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.categories h2{
+    text-align: center;
+}
+
+.categories ul{
+    padding-left: 20px;
+    list-style: none;
+}
+
+.categories li{
+    padding-bottom: 6px;
+    border-bottom: dotted 1px #333;
+    /*list-style-image: url('../img/images.jpg');*/
+}
+
+.my-form{
+    padding: 20px;
+}
+
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+
+.my-form label{
+    display: block;
+}
+
+.my-form input[type="text"] .my-form textarea{
+    padding: 8px;
+    width: 100%;
+}
+
+.my-form input[type="submit"]{
+    background-color: red;
+    color: blue;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 10%;
+}

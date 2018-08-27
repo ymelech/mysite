@@ -1,0 +1,27 @@
+{% extends "maintenance/base.html" %}
+
+{% block title %}
+Maintenance list by device
+{% endblock %}
+
+{% block body %}
+    {% if maintenance %}
+        <ul></ul>
+        {% for maintenance in object_list %}
+            <li>
+                <a>Repaired at: {{ maintenance.repaired_at }}</a>
+                <br>
+                <a>Device: </a>
+                <a href="{% url 'maintenance:device_details' maintenance.device.id %}">{{ maintenance.device }}</a>
+                <br><a>Fault: </a>
+                <a href="{% url 'maintenance:maintenance_details' maintenance.id %}">{{ maintenance.fault }}</a>
+                <br><a>Description: {{ maintenance.description }}</a>
+                <br><a>Comments: {{ maintenance.comments }}</a>
+            </li>
+            <br>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No maintenances are available for device.</p>
+    {% endif %}
+{% endblock %}

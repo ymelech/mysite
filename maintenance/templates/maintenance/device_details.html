@@ -1,0 +1,18 @@
+{% extends "maintenance/base.html" %}
+
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'maitenance/style.css' %}">
+
+{% block title %}Device Details{% endblock %}
+
+{% block body %}
+    <h1> Name: {{ device.device_name }} </h1>
+    <h2> Type: {{ device.dev_type }}</h2>
+    <h2> SN: {{ device.sn }}</h2>
+    <h2> ID: {{ device.dev_id }}</h2>
+    <h2> Description: {{ device.descr }}</h2>
+    <a href="{% url 'maintenance:maintenance_by_device' device.id %}">to device maintenance</a>
+    <br>
+    <a href="{% url 'maintenance:device_list' %}">to device list </a>
+{% endblock %}
