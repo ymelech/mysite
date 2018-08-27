@@ -18,4 +18,6 @@
     {% else %}
         <p>No maintenances are available.</p>
     {% endif %}
+    <br>
+    <a href="{% url 'maintenance:device_list' %}">to device list </a>
 {% endblock %} 

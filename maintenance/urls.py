@@ -6,6 +6,7 @@ from . import views
 app_name = 'maintenance'
 
 urlpatterns = [
+    url(r'^$', views.DeviceIndexView.as_view(), name='device_list'),
     url(r'^device/$', views.DeviceIndexView.as_view(), name='device_list'),
     path('<int:pk>/', views.DeviceDetailView.as_view(), name='device_details'),
     path('device/<int:pk>/maintenance/', views.DeviceMaintenanceView.as_view(), name='maintenance_by_device'),

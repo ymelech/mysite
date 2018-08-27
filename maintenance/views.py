@@ -15,7 +15,7 @@ class DeviceIndexView(generic.ListView):
     context_object_name = 'device'
 
     def get_queryset(self):
-            return Device.objects.all()
+            return Device.objects.all().order_by('dev_type', 'sn')
 
 class DeviceDetailView(generic.DetailView):
     model = Device
@@ -28,7 +28,7 @@ class MaintenanceIndexView(generic.ListView):
     context_object_name = 'maintenance'
 
     def get_queryset(self):
-        return Maintenance.objects.all()
+        return Maintenance.objects.all().order_by('-repaired_at')
 
 class MaintenanceDetailView(generic.DetailView):
     model = Maintenance
@@ -40,4 +40,4 @@ class DeviceMaintenanceView(generic.ListView):
     template_name = 'maintenance/maintenance_list_by_device.html'
     context_object_name = 'maintenance'
     def get_queryset(self):
-        return Maintenance.objects.filter(device__id = self.kwargs['pk'] )
+        return Maintenance.objects.filter(device__id = self.kwargs['pk']).order_by('-repaired_at')

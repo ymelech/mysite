@@ -9,7 +9,7 @@ Maintenance list by device
         <ul></ul>
         {% for maintenance in object_list %}
             <li>
-                <a>Repaired at: {{ maintenance.repaired_at }}</a>
+                <a>Repaired at: {{ maintenance.repaired_at.date }}</a>
                 <br>
                 <a>Device: </a>
                 <a href="{% url 'maintenance:device_details' maintenance.device.id %}">{{ maintenance.device }}</a>
@@ -24,4 +24,7 @@ Maintenance list by device
     {% else %}
         <p>No maintenances are available for device.</p>
     {% endif %}
+    <a href="{% url 'maintenance:maintenance_list' %}">to maintenance list </a>
+    <br>
+    <a href="{% url 'maintenance:device_list' %}">to device list </a>
 {% endblock %}

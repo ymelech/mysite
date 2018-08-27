@@ -6,10 +6,13 @@
 
 {% block body %}
     <h1> {{ maintenance.device.toString }} </h1> 
-    <h2> Fault: {{ maintenance.fault }}</h2>
-    <h2> Repaired at: {{ maintenamce.repaired_at }}</h2>
-    <h2> Received at: {{ maintenance.received_at }}</h2>
-    <h2> Comments: {{ maintenance.comments }}</h2>
+    <h2> {{ maintenance.fault }}</h2>
+    <h2> Received at: {{ maintenance.received_at.date }}</h2>
+    <h2> Repaired at: {{ maintenamce.repaired_at.date }}</h2>
+    <h2> Description: </h2>
+    <p>{{ maintenance.description }}</p>
+    <h2> Comments: </h2>
+    <p>{{ maintenance.comments }}</p>
 
     <a href="{% url 'maintenance:maintenance_by_device' maintenance.device.id %}">to maintenance list for device {{ maintenance.device.toString }}</a>
     <br><a href="{% url 'maintenance:maintenance_list' %}">to maintenance list </a>
